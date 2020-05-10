@@ -1,0 +1,80 @@
+@media only screen and (max-width : 375px) {
+    .slider img {
+        height: 320px;
+    }
+
+    .foto-gall .second {
+     margin-left: 0;
+    }
+
+    .pagination {
+        margin-left: 0px;
+    }
+
+    .all-grade .school {
+       margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .all-grade .two {
+        margin-left: 0px;
+    }
+
+    .all-grade .three {
+        float: left;
+    }
+
+    .all-grade .teacher img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width : 420px) {
+
+   html, body {
+        max-width: 100%;  
+        margin-right: 0px;  
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+
+    .slider img {
+        height: 320px;
+    }
+
+    .foto-gall .second {
+     margin-left: 0;
+    }
+
+    .pagination {
+        margin-left: 0px;
+    }
+
+    .all-grade .school {
+       margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .all-grade .two {
+        margin-left: 0px;
+    }
+
+    .all-grade .three {
+        float: left;
+    }
+
+    .all-grade .teacher img {
+        width: 300px;
+        height: 300px;
+    }
+
+}
