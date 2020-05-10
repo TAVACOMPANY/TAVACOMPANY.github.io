@@ -33,6 +33,11 @@
         margin-top: 10px;
     }
 
+    .foto-gall .last {
+        margin-left: 0px;
+        float: left;
+    }
+
 }
 
 
@@ -77,9 +82,14 @@
         height: 300px;
     }
 
+    .foto-gall .last {
+        margin-left: 0px;
+        float: left;
+    }
+
 }
 
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 800px) {
 
     html, body {
          max-width: 100%;  
