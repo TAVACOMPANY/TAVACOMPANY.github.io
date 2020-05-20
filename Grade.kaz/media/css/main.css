@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');  
+* ::after, ::before {
+  box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+ color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+header .navbar-light {
+    background-image: url("https://broadtela.com/wp-content/uploads/sites/2/2016/04/Slide1.3.jpg");
+}
+
+header .navbar-brand {
+    font-family: 'Pacifico', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 22px;
+    transition: 2s;
+    text-shadow: 2px 2px #ccc;
+}
+
+header .navbar-brand:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+header .nav-item {
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+header .nav-item a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: blue  ;
+    height: 1px  ;
+    transform: scale(0);
+    transition: all 0.3s;
+}
+
+header .nav-item a:hover::after {
+    transform: scale(1);
+}
+
+.slider {
+    box-sizing: border-box;
+    margin-top: 2em;
+    border-width: .2rem;
+    position: relative;
+}
+
+.slider img {
+    height: 500px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.post-title {
+    color: #626262;
+
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-size: 30px;
+}
+
+.single-post {
+    margin-top: 25px;
+    border: 2px solid;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-image: url('https://broadtela.com/wp-content/uploads/sites/2/2016/04/Slide1.3.jpg');
+    padding: 40px 0;
+    color: #000;
+    flex: 0 0 auto;
+    bottom: 0 auto;
+}
+
+.footer-left a {
+    color: #000;
+    margin-right: 20px;
+}
+
+.footer-right a {
+    color: #626262;
+    margin-left: 20px;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+.kz {
+    margin-bottom: 30px;
+    margin-left: 8px;
+}
+
+.right {
+    pointer-events: none;
+    cursor: default
+}
+
+.right:hover {
+    text-decoration: none;
+}
+i.fab.fa-instagram:hover {
+    color: rgb(231, 137, 152);
+}
+
+i.fab.fa-vk:hover {
+    color: rgb(52, 39, 223);
+}
+
+i.fab.fa-twitter:hover {
+    color: rgb(125, 229, 255);
+}
+
+.jumbotron.jumbotron-fluid {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.jumbotron .display-4 {
+    text-align: center;
+    background: linear-gradient(to right, rgb(141, 117, 226) 40%, rgb(128, 236, 186) 50%, rgb(231, 132, 86) 59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+/* photo */
+
+.bord {
+    width: 350px;
+    height: 250px;
+    line-height: 20px;
+}
+
+.foto-gall img {
+    width: 350px;
+    height: 250px;
+    border: 1px solid #000;
+    border-radius: 1px;
+    line-height: 10px;
+    opacity: 1;
+}
+
+.foto-gall img:hover {
+    opacity: 0.2;
+}
+ 
+.marginset {
+    margin-top: 20px;
+}
+
+.foto-gall .last {
+    margin-left: 20px;
+    float: right;
+    margin-top: 20px;
+}
+
+.foto-gall .second {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.foto-gall .one {
+    margin-top: 20px;
+}
+
+.g-name h2 {
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.g-quantity {
+    font-size: 20px;
+    margin-left: 950px;
+}
+
+#g-quantity-score {
+    color: #000;
+    font-size: 15px;
+}
+
+/*about*/
+
+
+.all-grade .teacher img {
+    width: 350px;
+    height: 350px;
+}
+
+.all-grade .student img {
+    width: 350px;
+    height: 250px;
+}
+
+.all-grade .school img {
+    width: 600px;
+    height: 350px;
+}
+
+.all-grade .school {
+    display:inline-block;
+    margin-left: 120px;
+    width: 600px;
+}
+
+
+.all-grade .teacher {
+    display:inline-block;
+}
+
+.all-grade .card {
+    border: 1px solid rgb(114, 114, 114);
+}
+
+.all-grade .student {
+    display:inline-block;
+    white-space: nowrap;
+}
+
+.all-grade .three {
+    float: right;
+}
+
+.all-grade .two {
+    margin-left: 120px;
+}
+
+.first {
+    margin-bottom: 50px;
+}
+
+.two {
+    margin-bottom: 50px;
+}
+
+.three {
+    margin-bottom: 50px;
+}
+
+.vid-views video {
+    margin-top: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.pagination {
+    margin-left: 500px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.news {
+    background-color: #fff;
+}
+
+.news h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.news .media {
+    border: 1px solid black;
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+
+.news .media h5 {
+    font-size: 25px;
+}
+
+.news .media p {
+    font-size: 18px;
+}
+
+.news .media a {
+    font-size: 18px;
+}
+
+.news img {
+    width: 64px;
+    height: 64px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 45%;
+}
+
+.news p {
+    color: rgb(116, 115, 115);
+}
+
+.news h5 {
+    color: rgb(50, 50, 50);
+}
