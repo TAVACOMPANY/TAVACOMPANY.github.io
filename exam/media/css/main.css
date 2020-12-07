@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
+    color: #fff;
+}
+
+.NameApp {
+    text-align: center;
+    margin-top: 38px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, cursive;
+    font-size: 66px;
+    font-weight: 700;
+    animation: Uptext 2s alternate; 
+}
+
+.up {
+    color: red;
+}
+
+.text-main {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.btn-test {
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(43, 42, 42);
+    text-decoration: none;
+    margin-left: 29px;
+    margin-top: 29px;
+    color: white;
+}
+
+.btn-test:active {
+    background-color: #000000;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn-test:hover {
+    color: rgb(255, 41, 41);
+    background-color: rgb(30, 30, 30);
+    transition: all .1s;
+} 
+
+.wrapp {
+    margin-left: 18%;
+}
+
+:disabled {
+    background-color: rgb(177, 177, 177);
+}
+:disabled:hover {
+    background-color: rgb(177, 177, 177);
+    color: white;
+}
+
+footer p  {
+    text-align: center;
+    text-shadow: 2px rgb(212, 211, 211);
+    margin-top: 130px;
+}
+
+footer .inst {
+    text-decoration: none;
+    color: red;
+}
+
+footer .inst:hover {   
+    color: darkblue;
+}
