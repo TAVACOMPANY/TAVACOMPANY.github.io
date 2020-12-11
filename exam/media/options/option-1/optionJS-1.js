@@ -5,7 +5,7 @@ const option3 = document.querySelector('.option3');
 const option4 = document.querySelector('.option4');
 const option5 = document.querySelector('.option5');
 
-/* все наши вопросы */
+/* все вопросы */
 const optionElements = document.querySelectorAll('.option');
 
 const question = document.getElementById('question'),
@@ -177,7 +177,7 @@ const questions = [
             'первое место',
             'третье',
         ],
-        rightAnswer: 3
+        rightAnswer: 0
     },
     {
         question: 'Когда была открыта Академия Наук Каз.ССР? ',
