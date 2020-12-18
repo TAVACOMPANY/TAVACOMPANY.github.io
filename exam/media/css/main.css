@@ -17,8 +17,55 @@ body {
     animation: Uptext 2s alternate; 
 }
 
+
 .up {
     color: red;
+}
+
+.up.u {
+    animation: ucolor 3s infinite;
+    animation-delay: 0.5s; 
+}
+
+@keyframes ucolor {
+    0% {
+        color: red;
+    }
+    
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: white;
+    } 
+}
+
+.up.p {
+    animation: pcolor 3s infinite;
+    animation-delay: -0.7s;
+}
+
+@keyframes pcolor {
+    0% {
+        color: red;
+    }
+    
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: white;
+    } 
 }
 
 .text-main {
@@ -63,11 +110,21 @@ body {
     color: white;
 }
 
+.new_year {
+  color: white;
+  margin-left: 5px;
+}
+
+.new_year:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
 
 footer p  {
     text-align: center;
     text-shadow: 2px rgb(212, 211, 211);
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
 footer .inst {
@@ -89,5 +146,5 @@ footer .data {
 footer .name-data {
     text-align: center;
     margin: 0;
-    margin-top: 125px;
+    margin-top: 90px;
 }

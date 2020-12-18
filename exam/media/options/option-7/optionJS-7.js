@@ -487,10 +487,12 @@ function playAudioCorrect(){
     var myAudio = new Audio;
     myAudio.src = "../../correct-answer.mp3";
     myAudio.play();
+    myAudio.volume= 0.07;
 }
 
 function playAudioWrong(){
     var myAudio1 = new Audio;
     myAudio1.src = "../../wrong-answer.mp3";
     myAudio1.play();
+    myAudio1.volume= 0.07;
 }
