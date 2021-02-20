@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
+    color: #fff;
+}
+
+.NameApp {
+    text-align: center;
+    margin-top: 38px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, cursive;
+    font-size: 66px;
+    font-weight: 700;
+    animation: Uptext 2s alternate; 
+}
+
+.up {
+    color: red;
+}
+
+.up.u {
+    animation: ucolor 3s infinite;
+    animation-delay: 0.5s; 
+}
+
+@keyframes ucolor {
+    0% {
+        color: red;
+    }
+    
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: white;
+    } 
+}
+
+.up.p {
+    animation: pcolor 3s infinite;
+    animation-delay: -0.7s;
+}
+
+@keyframes pcolor {
+    0% {
+        color: red;
+    }
+    
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: white;
+    } 
+}
+
+
+.text-main {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.btn-test {
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(43, 42, 42);
+    text-decoration: none;
+    margin-left: 29px;
+    margin-top: 29px;
+    color: white;
+}
+
+.btn-test:active {
+    background-color: #000000;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn-test:hover {
+    color: rgb(255, 41, 41);
+    background-color: rgb(30, 30, 30);
+    transition: all .1s;
+} 
+
+footer .data {
+    color: rgb(243, 164, 164);
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .name-data {
+    text-align: center;
+    margin: 0;
+    margin-top: 80px;
+}
+
+footer p  {
+    text-align: center;
+    text-shadow: 2px rgb(212, 211, 211);
+    margin-top: 130px;
+}
+
+footer .inst {
+    color: #000;
+}
+
+footer .inst:hover {   
+    color: #fff;
+}
+
+.wrapp {
+    margin-left: 11%;
+}
+
+:disabled {
+    background-color: rgb(177, 177, 177);
+}
+:disabled:hover {
+    background-color: rgb(177, 177, 177);
+    color: white;
+}
