@@ -253,3 +253,13 @@
         height: 50px !important;
     }
 }
+
+@media only screen and (max-width : 1920px) {
+    .wrapp {
+    margin-left: 25px;
+    }
+    
+    footer {
+    margin-top: 450px;
+    }
+}
