@@ -24,17 +24,6 @@ button:hover {
     transition: all 0.5s;
 }
 
-.ref-a {
-    color: rgb(255, 163, 59);
-    font-size: 35px;
-    font-family: 'Dancing Script', cursive;
-    text-decoration: none;
-}
-
-.ref-a:hover {
-    color: rgb(20, 20, 20);
-}
-
 button:active {
     outline: none;
     text-decoration: none;
@@ -52,6 +41,17 @@ h1 {
 
 .wrapp {
     margin-left: 545px;
+}
+
+.wrapp a {
+    color: rgb(255, 163, 59);
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+
+.wrapp a:hover {
+    color: rgb(20, 20, 20);
 }
 
 .a-name {
