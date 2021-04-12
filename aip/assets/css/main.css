@@ -41,6 +41,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-style: oblique;
     transition: all .6s;
+    border: rgb(255, 163, 59) 1px;
 }
 
 .btn-test:active {
@@ -53,6 +54,7 @@ body {
     color: rgb(255, 163, 59);
     background-color: rgb(20, 20, 20);
     transition: all .3s;
+    border: rgb(255, 163, 59) 5px;
 } 
 
 .wrapp {
@@ -71,7 +73,7 @@ body {
 footer p  {
     text-align: center;
     text-shadow: 2px rgb(212, 211, 211);
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
 footer .inst {
@@ -92,7 +94,7 @@ footer .data {
 footer .name-data {
     text-align: center;
     margin: 0;
-    margin-top: 125px;
+    margin-top: 115px;
 }
 
 .a {
@@ -104,13 +106,13 @@ footer .name-data {
 .i {
     color: rgb(0, 255, 13);
     animation: itored 5s infinite ease; 
-    animation-delay: 0.65s; 
+    animation-delay: 0.7s; 
 }
 
 .p {
     color: blue;
     animation: ptogreen 5s infinite ease;
-    animation-delay: 0.75s;
+    animation-delay: 0.8s;
 }
 
 
