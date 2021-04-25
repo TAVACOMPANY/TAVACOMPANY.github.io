@@ -68,6 +68,6 @@ h1 {
 
 @media only screen and (max-width : 375px) {
     .wrapp {
-        margin-left: 45px;
+        margin-left: 45px !important;
     }
 }
