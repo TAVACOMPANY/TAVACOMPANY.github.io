@@ -65,3 +65,9 @@ h1 {
     text-decoration: solid;
     color: azure;
 }
+
+@media only screen and (max-width : 375px) {
+    .wrapp {
+        margin-left: 45px;
+    }
+}
