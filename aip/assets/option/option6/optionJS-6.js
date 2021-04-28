@@ -161,11 +161,11 @@ const questions = [
     {
         question: "Найдите правильный фрагмент поиска минимального элемента главной диагонали матрицы D размером 5х5:",
         options: [
-            "For i:=2 to 5 do if d[i, i]<min then min:=d[i, i];",
-            "min:=d[1,1]; for i:=2 to 5 do if d[i, i]<min then min:=d[i, i];",
-            "min:=0; for  i:=2 to 5 do if d[i, i]<min then min:=d[i, i];",
-            "min:=d[1,1]; for i:=2 to 5 do if d[i, i]>min then min:=d[i, i];",
-            "min=d[1,1]; for i:=2 to 5 do if d[i, i]<min then min=d[i, i];",
+            "For i:=2 to 5 do if d[i, i] < min then min:=d[i, i];",
+            "min:=d[1,1]; for i:=2 to 5 do if d[i, i] < min then min:=d[i, i];",
+            "min:=0; for  i:=2 to 5 do if d[i, i] < min then min:=d[i, i];",
+            "min:=d[1,1]; for i:=2 to 5 do if d[i, i] > min then min:=d[i, i];",
+            "min=d[1,1]; for i:=2 to 5 do if d[i, i] < min then min=d[i, i];",
         ],
         rightAnswer: 1
     },
