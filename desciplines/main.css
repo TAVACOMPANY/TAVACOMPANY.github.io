@@ -73,7 +73,7 @@ h1 {
     }
 }
 
-@media only screen and (min-width : 411px, max-width : 765px) {
+@media only screen and (min-width : 411px max-width : 765px) {
     .wrapp {
         margin-left: 67px !important;
     }
