@@ -34,7 +34,7 @@ const questions = [
             'the cinemas' + '<br/>' + 'Washington monument',
             'the Statue of Liberty' + '<br/>' + 'theatre',
         ],
-        rightAnswer: 1
+        rightAnswer: 0
     },
     {
         question: 'Is this Carol’s T-shirt? - No, it isn’t … . It is … .',
