@@ -153,7 +153,7 @@ const questions = [
             'multimedia',
             'keyboard' + br + 'mouse',
             'printer',
-            'scanner' + br + 'gamepad' + 'microphone',
+            'scanner' + br + 'gamepad' + br + 'microphone',
             'CD drives',
         ],
         rightAnswer: 3
