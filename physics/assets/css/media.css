@@ -61,6 +61,10 @@
     * {
         box-sizing: initial;
     }
+    
+    .kpd {
+    width: 320px !important;
+    }
 }
 
 
@@ -127,6 +131,10 @@
     .wrapp {
         margin-left: 23% !important;
     }
+    
+    .kpd {
+    width: 320px !important;
+    }
 }
 
 
@@ -189,6 +197,10 @@
         width: 100px;
         height: 50px;
         margin-left: 24px;
+    }
+    
+    .kpd {
+    width: 310px !important;
     }
 }
 
@@ -255,6 +267,10 @@
     .btn-test {
         width: 95px !important;
         height: 50px !important;
+    }
+    
+    .kpd {
+     width: 280px !important;
     }
 }
 
