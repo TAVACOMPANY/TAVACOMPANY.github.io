@@ -150,10 +150,10 @@ const questions = [
         question: 'Определить момент инерции I материальной точки массой m=0,3 кг относительно оси, отстоящей от точки на r=20см:',
         options: [
             '<img src="img4/image27-5.png" class="electron">',
-            '<img src="img4/image27-2.png" class="electron">>',
-            '<img src="img4/image27-1.png" class="electron">>',
-            '<img src="img4/image27-3.png" class="electron">>',
-            '<img src="img4/image27-4.png" class="electron">>',
+            '<img src="img4/image27-2.png" class="electron">',
+            '<img src="img4/image27-1.png" class="electron">',
+            '<img src="img4/image27-3.png" class="electron">',
+            '<img src="img4/image27-4.png" class="electron">',
         ],
         rightAnswer: 3
     },
