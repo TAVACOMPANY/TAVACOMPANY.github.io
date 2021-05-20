@@ -154,7 +154,7 @@ const questions = [
             "for i:=1 to 10 read(A);",
             "const A:array[1..10] of real;",
             "for i:=1 to 10 do read (A[i]);",
-            "for i:=1 to 10 do read (A[i]);",
+            "var A:array[1..10] of real; ",
         ],
         rightAnswer: 3
     },
