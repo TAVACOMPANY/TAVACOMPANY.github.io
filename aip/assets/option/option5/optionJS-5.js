@@ -115,7 +115,7 @@ const questions = [
         rightAnswer: 0
     },
     {
-        question: "При каком X в результате выполнения операторов" + "<br/>" + "If X>3 Then If X<12 Then Y:=SQR(X)+1 Else Y:=X+3 Else" + "<br/>" + "If X>3 Then If X<12 Then Y:=SQR(X)+1 Else Y:=X+3 Else" + "<br/>" + "Writeln(y);" + "<br/>" + "на экран будет выведено число 1.",
+        question: "При каком X в результате выполнения операторов" + "<br/>" + "If X>3 Then If X<12 Then Y:=SQR(X)+1 Else Y:=X+3 Else" + "<br/>" + "If X>=2 Then Y:=X-2 Else Y:=SQRT(ABS(X-3));" + "<br/>" + "Writeln(y);" + "<br/>" + "на экран будет выведено число 1.",
         options: [
             "X=-7",
             "X=2.5",
