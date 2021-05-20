@@ -184,7 +184,7 @@ const questions = [
         question: "Найдите правильный фрагмент поиска произведения элементов побочной диагонали матрицы Р размером 4х4:",
         options: [
             "P:=1; for i:=1 to 4 do P:=P*b[5-i];",
-            "P:=1; for i:=1 to 4 do P:=P*b[i, 5-i];",
+            "P:=0; for i:=1 to 4 do P:=P*b[i, 5-i];",
             "P:=1; for i:=1 to 4 do P:=P*b[i, 5-i];",
             "P=0; for i:=1 to 4 do P:=P*b[i, i];",
             "P=0; for i:=1 to 4 do P:=P*b[i, i];",
