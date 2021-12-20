@@ -113,6 +113,17 @@ const questions = [
         ],
         rightAnswer: 2
     },
+    {
+        question: 'Сегменты не содержат',
+        options: [
+            'Процедуры',
+            'Информацию смешанного типа',
+            'Массивы',
+            'Стек',
+            'Скалярные величины',
+        ],
+        rightAnswer: 1
+    },
 ];
   
 numberOfAllQuestion.innerHTML = questions.length;  // выводим кол-во вопросов
