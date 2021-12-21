@@ -245,6 +245,7 @@ const checkAnswer = el => {
         el.target.classList.add('correct');
         updateAnswerTracker('correct');
         score++;
+          msgofScore();
     } else {
         el.target.classList.add('wrong');
         updateAnswerTracker('wrong');
@@ -301,23 +302,25 @@ for(option of optionElements) {
     option.addEventListener('click', e => checkAnswer(e));
 }
 
-if(score == 0 || score == 1 || score == 2)  {
-    msgOfResult.innerHTML = 'Пидр';
-} 
- else if(score == 3 || score == 4 || score == 5) {
-    msgOfResult.innerHTML = 'Не плохо, но все еще пидр';
- }
- else if(score == 6 || score == 7 || score == 8) {
-    msgOfResult.innerHTML = 'Средний пидр';
- }
- else if(score == 9 || score == 10 || score == 11) {
-    msgOfResult.innerHTML = 'Нормальный пидр';
- }
- else if(score == 12 || score == 13 || score == 14) {
-    msgOfResult.innerHTML = 'Запомнивший пидр';
- } else {
-    msgOfResult.innerHTML = 'Умный пидр';
- }
+function msgofScore() {
+    if(score == 0 || score == 1 || score == 2)  {
+        msgOfResult.innerHTML = 'Пидр';
+    } 
+     else if(score == 3 || score == 4 || score == 5) {
+        msgOfResult.innerHTML = 'Не плохо, но все еще пидр';
+     }
+     else if(score == 6 || score == 7 || score == 8) {
+        msgOfResult.innerHTML = 'Средний пидр';
+     }
+     else if(score == 9 || score == 10 || score == 11) {
+        msgOfResult.innerHTML = 'Нормальный пидр';
+     }
+     else if(score == 12 || score == 13 || score == 14) {
+        msgOfResult.innerHTML = 'Запомнивший пидр';
+     } else {
+        msgOfResult.innerHTML = 'Умный пидр';
+     }
+}
 
 
 const quizOver = () => {
