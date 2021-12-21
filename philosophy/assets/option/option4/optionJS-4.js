@@ -245,6 +245,7 @@ const checkAnswer = el => {
         el.target.classList.add('correct');
         updateAnswerTracker('correct');
         score++;
+          msgofScore();
     } else {
         el.target.classList.add('wrong');
         updateAnswerTracker('wrong');
