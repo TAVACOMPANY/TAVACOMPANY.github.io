@@ -302,6 +302,7 @@ for(option of optionElements) {
     option.addEventListener('click', e => checkAnswer(e));
 }
 
+function msgofScore() {
 if(score == 0 || score == 1 || score == 2)  {
     msgOfResult.innerHTML = 'Пидр';
 } 
@@ -319,7 +320,7 @@ if(score == 0 || score == 1 || score == 2)  {
  } else {
     msgOfResult.innerHTML = 'Умный пидр';
  }
-
+};
 
 const quizOver = () => {
     document.querySelector('.quiz-over-modal').classList.add('active');
