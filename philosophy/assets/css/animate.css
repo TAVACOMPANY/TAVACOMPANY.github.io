@@ -1,0 +1,200 @@
+.p {
+    animation: pcolor 8s infinite;
+    animation-delay: 0.3s; 
+
+}
+
+@keyframes pcolor {
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: greenyellow;
+    } 
+}
+
+.h {
+    animation: hcolor 8s infinite;
+    animation-delay: 0.5s; 
+
+}
+
+@keyframes hcolor {
+    25% {
+        color: greenyellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: red;
+    } 
+}
+
+.i {
+    animation: icolor 8s infinite;
+    animation-delay: 0.7s; 
+
+}
+
+@keyframes icolor {
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: greenyellow;
+    }
+
+    75% {
+        color: blue;
+    } 
+}
+
+.l {
+    animation: lcolor 8s infinite;
+    animation-delay: 0.9s; 
+
+}
+
+@keyframes lcolor {
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: greenyellow;
+    } 
+}
+
+.o {
+    animation: ocolor 8s infinite;
+    animation-delay: 1.1s; 
+
+}
+
+@keyframes ocolor {
+    25% {
+        color: greenyellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: red;
+    } 
+}
+
+.s {
+    animation: scolor 8s infinite;
+    animation-delay: 1.3s; 
+
+}
+
+@keyframes scolor {
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: greenyellow;
+    }
+
+    75% {
+        color: blue;
+    } 
+}
+
+.o2 {
+    animation: o2color 8s infinite;
+    animation-delay: 1.5s; 
+
+}
+
+@keyframes o2color {
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: greenyellow;
+    } 
+}
+
+.p2 {
+    animation: p2color 8s infinite;
+    animation-delay: 1.7s; 
+
+}
+
+@keyframes p2color {
+    25% {
+        color: greenyellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: red;
+    } 
+}
+
+.h12 {
+    animation: h12color 8s infinite;
+    animation-delay: 1.9s; 
+
+}
+
+@keyframes h12color {
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: greenyellow;
+    }
+
+    75% {
+        color: blue;
+    } 
+}
+
+.y {
+    animation: ycolor 8s infinite;
+    animation-delay: 2.1s; 
+
+}
+
+@keyframes ycolor {
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: greenyellow;
+    } 
+}
+
