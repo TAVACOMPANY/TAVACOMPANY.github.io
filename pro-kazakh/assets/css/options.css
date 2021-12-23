@@ -209,7 +209,9 @@ body {
     background-color: rgb(26, 26, 26);
 }
 
-img {
-    width: 80px;
-    height: 45px;
+.f2 {
+   position: absolute;
+   left: 3%;
+   top: 1%;
+   z-index: -1;
 }
