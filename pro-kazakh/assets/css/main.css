@@ -113,3 +113,10 @@ footer .name-data {
     animation-delay: 0.60s;
     transition: all 0.5s;
 }
+
+.f1 {
+    position: absolute;
+    left: -5%;
+    bottom: 1%;
+    z-index: -1;
+}
