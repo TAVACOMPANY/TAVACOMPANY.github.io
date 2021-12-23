@@ -249,7 +249,7 @@ for(option of optionElements) {
 
 function msgofScore() {
     if(score == 0 || score == 1)  {
-        msgOfResult.innerHTML = 'Cъебись с универа.';
+        msgOfResult.innerHTML = 'фуууууу!';
     } 
      else if(score == 2 || score == 3) {
         msgOfResult.innerHTML = 'Паскальщик';
