@@ -30,31 +30,31 @@ const questions = [
     {
         question: 'В каком из приведенных фрагментов программы будет найдена сумма элементов главной диагонали. Предварительная инициализация:' + br + 'int i, max, a[3][3]={1,2,3,4,5,6,7,8,9};',
         options: [
-            's=a[0][0];' + br + ' for(i=0;i<3;s+=a[i][i],i++);',
-            's=0;' + br + ' for(i=0;i<3;i++) s+=a[i][i];',
-            's=a[0];' + br + ' for(i=0;i<3;s+=a[i][i],i++);',
-            's=0;' + br + ' for(i=1;i<3;i++) s+=a[i][i]);',
-            's=0;' + br + ' for(i=0;i<=3;++i) s+=a[i][i]);',
+            's=a[0][0];' + br + ' for(i = 0; i < 3; s += a[i][i], i++);',
+            's=0;' + br + ' for(i = 0; i < 3; i++) s += a[i][i];',
+            's=a[0];' + br + ' for(i = 0; i < 3; s += a[i][i], i++);',
+            's=0;' + br + ' for(i = 1; i < 3; i++) s += a[i][i]);',
+            's=0;' + br + ' for(i = 0; i <= 3; ++i) s += a[i][i]);',
         ],
         rightAnswer: 1
     },
     {
         question: 'В каком из приведенных фрагментов программы ищется количество положительных элементов массива. Предварительная инициализация:' + br + 'int k, i, a[6]={-1,2,-3,4,-5,6};',
         options: [
-            'k=0;' + br + ' for(i=0;i<6;i++)' + br + ' if(a[i]>0) k+=a[i];',
-            'k=0;' + br + ' for(i=0;i<=6;i++)' + br + ' if(a[i]>0) k++;',
-            'k=a[0];' + br + ' for(i=0;i<=6;i++)' + br + ' if(a[i]>0) k+=a[i];',
-            'k=a[0];' + br + ' for(i=0;i<6;i++)' + br + ' if(a[i]>0) k++;',
-            'k=0;' + br + ' for(i=0;i<6;i++)' + br + ' if(a[i]>0) k++;',
+            'k=0;' + br + ' for(i=0; i < 6; i++)' + br + ' if(a[i] > 0) k+=a[i];',
+            'k=0;' + br + ' for(i=0; i <= 6; i++)' + br + ' if(a[i] > 0) k++;',
+            'k=a[0];' + br + ' for(i=0; i <= 6; i++)' + br + ' if(a[i] > 0) k+=a[i];',
+            'k=a[0];' + br + ' for(i = 0; i < 6; i++)' + br + ' if(a[i] > 0) k++;',
+            'k=0;' + br + ' for(i=0; i < 6; i++)' + br + ' if(a[i] > 0) k++;',
         ],
         rightAnswer: 4
     },
     {
         question: 'В результате выполнения какого фрагмента программы будет найдена сумма положительных элементов массива: инициализация исходных данных:	int a[5] = { -1, 2, -3, 4, 5}; int i,s;',
         options: [
-            'for ( s=0,i=0; i<5; i++)' + br + 'if ( a[i] > 0 )' + br + 's += a[i]+i;',
+            'for ( s=0,i=0; i<5; i++)' + br + 'if ( a[i] > 0 )' + br + 's += a[i] + i;',
             'for ( s=1,i=0; i<5; ++i)' + br + 'if ( a[i] > 0 )' + br + 's += a[i];',
-            'for ( s=a[0],i=0 ; i<=5; ++i) for ( s=a[0],i=0 ; i<=5; ++i)' + br + 'if ( a[i] > 0 )' + br + 's + = a[i];',
+            'for ( s=a[0], i=0 ; i<=5; ++i) for ( s= a[0] ,i=0 ; i <= 5; ++i)' + br + 'if ( a[i] > 0 )' + br + 's + = a[i];',
             'for ( s=a[0],i=0; i<5; i++ )' + br + 'if ( a[i] > 0 )' + br + 's += a[i];',
             'for ( s=0,i=0 ; i<5; i++)' + br + 'if ( a[i] > 0 )' + br + 's += a[i];',
         ],
@@ -63,11 +63,11 @@ const questions = [
     {
         question: 'Какая из приведенных ниже конструкций будет верной, при нахождении суммы элементов массива а[5] , расположенных до максимального элемента?',
         options: [
-            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max=a[0];' + br + ' for(i=0;i<5;i++)' + br + ' if (max>a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<=5-k;i++)' + br + ' s+=a[i];',
-            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' for(i=0;i<=5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<k+1;i++)' + br + ' s+=a[i];',
-            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<k;i++)' + br + 's+=a[i];',
-            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max=a[0]; k=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<k;i++)' + br + '  s+=a[i];',
-            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' max=a[0]; k=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<=k;i++)' + br + ' s+=a[i];',
+            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max = a[0];' + br + ' for(i = 0; i < 5; i++)' + br + ' if (max > a[i] ) {max = a[i]; k=i;}' + br + ' for(i = 0; i <= 5-k; i++)' + br + ' s += a[i];',
+            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' for(i = 0; i <= 5; i++)' + br + ' if (max < a[i] ) {max = a[i]; k=i;}' + br + ' for(i = 0; i < k+1; i++)' + br + ' s += a[i];',
+            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' for(i = 0; i < 5; i++)' + br + ' if (max < a[i] ) {max = a[i]; k=i;}' + br + ' for(i = 0; i < k; i++)' + br + 's += a[i];',
+            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max = a[0]; k = 0;' + br + ' for(i = 0; i < 5; i++)' + br + ' if (max < a[i]) {max = a[i]; k=i;}' + br + ' for(i = 0;i < k; i++)' + br + '  s += a[i];',
+            'main()' + br + ' {int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' max = a[0]; k = 0;' + br + ' for(i = 0; i < 5; i++)' + br + ' if (max < a[i] ) {max = a[i]; k=i;}' + br + ' for(i = 0; i <= k; i++)' + br + ' s += a[i];',
         ],
         rightAnswer: 3
     },
