@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    background-color: rgb(18, 145, 124);
+    font-size: .9375rem;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+
+.quiz-container {
+    max-width: 80%;
+    min-height: 85%;
+    background-color: #fff;
+    margin: 60px auto;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.question-number h3 {
+    color: rgb(18, 145, 124);
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#question {
+    font-size: 24px;
+    color: #000;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.options {
+    margin-bottom: 15px;
+}
+
+.options div {
+    background-color: #ccc;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.options div:hover {
+    background-color: #ccccccaf;
+}
+
+
+.quiz-over-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.quiz-over-modal.active {
+    display: block;
+}
+
+.content {
+    background-color: rgb(18, 145, 124);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 40%;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.content h1, p {
+    text-align: center;
+}
+
+.content p {
+ font-size: 20px;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+#btn-try-again {
+    background-color: rgb(0, 0, 0);
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 2px darkgoldenrod; 
+    color: #fff;
+    font-size: 16px;
+    border: 1px black solid;
+}
+
+#btn-try-again:hover {
+    background-color: rgb(24, 24, 24);
+    box-shadow: 2px darkgoldenrod; 
+    color: rgb(255, 251, 0);
+}
+
+#btn-main-menu {
+    background-color: rgb(0, 0, 0);
+    float: right;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: context-menu;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-shadow: 2px darkgoldenrod; 
+    border: 1px black solid;
+}
+
+#btn-main-menu:hover {
+    background-color: rgb(20, 20, 20);
+    color: rgba(238, 255, 0, 0.959);
+}
+
+.options div.correct {
+    color: #ffffff;
+    background-color: rgb(0, 255, 0);
+}
+
+.options div.wrong {
+    color: #ffffff;
+    background-color: rgba(245, 1, 1, 0.884);
+}
+
+.options div.disabled {
+    pointer-events: none;
+}
+
+.button #btn-next {
+    padding: 10px 50px;
+    background-color: rgb(64, 100, 172);
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 3px;
+    outline: none;
+    border: 1px black solid;
+}
+
+.button #btn-next:hover {
+    background-color: rgb(24, 98, 248);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+#answers-tracker div {
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#answers-tracker {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.attention-over-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.attention-over-modal.actived {
+    display: block;
+}
+
+.attention-over-modal .content {
+    border-radius: 10px;
+}
+
+.attention-over-modal .content h1 {
+    color: rgb(231, 59, 59);
+}
+
+.content #btn-close {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 16px;
+    width: 150px;
+    height: 32px;
+    margin-left: 34%;
+    border-radius: 12%;
+    border: 1px rgb(56, 38, 13);
+}
+
+.content #btn-close:hover {
+    background-color: rgb(26, 26, 26);
+}

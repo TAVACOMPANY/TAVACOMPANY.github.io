@@ -1,0 +1,263 @@
+/* все ответы */
+const option1 = document.querySelector('.option1');
+const option2 = document.querySelector('.option2');
+const option3 = document.querySelector('.option3');
+const option4 = document.querySelector('.option4');
+const option5 = document.querySelector('.option5');
+
+/* все вопросы */
+const optionElements = document.querySelectorAll('.option');
+
+const question = document.getElementById('question'),
+      numberOfQuestion = document.getElementById('number-of-question'),
+      numberOfAllQuestion = document.getElementById('number-of-all-questions');
+
+let indexOfQuestion, // индекс текущего вопроса
+    indexOfPage = 0; // индекс страниц
+
+const answersTracker = document.getElementById('answers-tracker');
+const btnNext = document.getElementById('btn-next');
+
+let score = 0; // Итоговый Результат
+
+const correctAnswer = document.getElementById('correct-answer'),
+      numberOfAllQuestion2 = document.getElementById('number-of-all-questions-2'),
+      btnTryAgain = document.getElementById('btn-try-again');
+
+const questions = [
+    {
+        question: 'К проявлениям эмоциональной жизни человека относятся:',
+        options: [
+            'желания, мотивы, мечты',
+            'настроения, способности, желания, мотивы',
+            'аффекты, собственно эмоции, чувства и настроения',
+            'креативность, способности, задатки, настроение',
+            'деятельность, операции, достижения, эмоции',
+        ],
+        rightAnswer: 2
+    },
+    {
+        question: 'Способ научного познания сущности психических явлений и их закономерностей – это',
+        options: [
+            'Анализ',
+            'Психологическое тестирование',
+            'Психологическое консультирование',
+            'Психологическое исследование',
+            'Индукция',
+        ],
+        rightAnswer: 3
+    },
+    {
+        question: 'Отличается быстротой (иногда лихорадочной быстротой) движений и действий, порывистостью, возбудимостью. Психические процессы протекают быстро, интенсивно.',
+        options: [
+            'Холерик',
+            'Флегматик',
+            'Меланхолик',
+            'Сангвиник',
+            'Средний',
+        ],
+        rightAnswer: 0
+    },
+    {
+        question: 'Что такое "индивид"?',
+        options: [
+            'это личность, как устойчивая целостность биологических и психологических процессов;',
+            'это единичный представитель человеческого рода;',
+            'это личность, как субьект социально-плитических отношений',
+            'это человек, хомо сапиенс, производящий орудия труда.',
+            'это личность, как субьект деятельности, познания и творчества;',
+        ],
+        rightAnswer: 1
+    },
+    {
+        question: 'Что понимается под когнитивной функцией СМИ?',
+        options: [
+            'тонизирующая;',
+            'экскапистская;',
+            'информационная;',
+            'отвлекающая.',
+            'познавательная;',
+        ],
+        rightAnswer: 4
+    },
+    {
+        question: 'Основная функция СМИ?',
+        options: [
+            'отвлекающая;',
+            'тонизирующая;',
+            'экскапистская;',
+            'коммуникативная;',
+            'информационная.',
+        ],
+        rightAnswer: 3
+    },
+    {
+        question: 'Прогностическая функция социологии означает.',
+        options: [
+            'разработка практических рекомендаций',
+            'социальный контроль над социальными процессами',
+            'выработка научно-обоснованных прогнозов',
+            'выработка теорий',
+            'формирование стереотипов поведения',
+        ],
+        rightAnswer: 2
+    },
+    {
+        question: 'Знаменитый девиз Э.Дюркгейма',
+        options: [
+            '«Изучайте социальные факты как вещи!»;',
+            '«Цель оправдывает средства»;',
+            '«Изучайте общество как природу».',
+            '«Всегда вперед!»;',
+            '«Я знаю, что я ничего не знаю»;',
+        ],
+        rightAnswer: 0
+    },
+    {
+        question: 'Какой закон О. Конта стал теорией социального развития?',
+        options: [
+            'Закон подражания',
+            'Закон инстинктов',
+            'Закон классификации наук',
+            'Закон структуры общества',
+            'Закон трех ступеней',
+        ],
+        rightAnswer: 4
+    },
+    {
+        question: 'Способ научного познания сущности психических явлений и их закономерностей – это',
+        options: [
+            'Индукция',
+            'Психологическое исследование',
+            'Психологическое консультирование',
+            'Психологическое тестирование',
+            'Анализ',
+        ],
+        rightAnswer: 1
+    },
+];
+  
+numberOfAllQuestion.innerHTML = questions.length;  // выводим кол-во вопросов
+
+const load = () => {
+    question.innerHTML = questions[indexOfQuestion].question; // сам вопрос
+
+    option1.innerHTML = questions[indexOfQuestion].options[0];
+    option2.innerHTML = questions[indexOfQuestion].options[1];
+    option3.innerHTML = questions[indexOfQuestion].options[2];
+    option4.innerHTML = questions[indexOfQuestion].options[3];
+    option5.innerHTML = questions[indexOfQuestion].options[4];
+
+    numberOfQuestion.innerHTML = indexOfPage + 1; // устоновка номера страницы 
+    indexOfPage++;
+};
+
+let comletedAnswers = [];
+
+const randomQuestion = () => {
+    let randomNumber = Math.floor(Math.random() * questions.length);
+    let hitDuplicate = false;
+
+    if(indexOfPage == questions.length) {
+        quizOver();
+    } else {
+        if(comletedAnswers.length > 0) {
+            comletedAnswers.forEach(item => {
+                if(item == randomNumber) {
+                    hitDuplicate = true;
+                }
+            });
+            if(hitDuplicate) {
+                randomQuestion();
+            } else {
+                indexOfQuestion = randomNumber;
+                load();
+            }
+        }
+        if(comletedAnswers == 0) {
+            indexOfQuestion = randomNumber;
+            load();
+        }
+    }
+    comletedAnswers.push(indexOfQuestion);
+};
+
+const checkAnswer = el => {
+    if(el.target.dataset.id == questions[indexOfQuestion].rightAnswer) {
+        el.target.classList.add('correct');
+        updateAnswerTracker('correct');
+        score++;
+    } else {
+        el.target.classList.add('wrong');
+        updateAnswerTracker('wrong');
+    }
+    disabledOptions();
+};
+
+const disabledOptions = () => {
+    optionElements.forEach(item => {
+        item.classList.add('disabled');
+        if(item.dataset.id == questions[indexOfQuestion].rightAnswer) {
+            item.classList.add('correct');
+        }
+    });
+};
+
+const enableOptions = () => {
+    optionElements.forEach(item => {
+        item.classList.remove('disabled', 'correct', 'wrong');
+    });
+};
+
+const answerTracker = () => {
+    questions.forEach(() => {
+         const div = document.createElement('div');
+         answersTracker.appendChild(div);
+    });
+};
+
+const updateAnswerTracker = status => {
+    answersTracker.children[indexOfPage - 1].classList.add(`${status}`);
+};
+
+const attModal = document.querySelector('.attention-over-modal');
+const btnClosed = document.getElementById("btn-close");
+
+btnClosed.addEventListener('click', function () {
+    attModal.classList.remove('actived');
+});
+
+const validate = () => {
+    if(!optionElements[0].classList.contains('disabled')) {
+       attModal.classList.add('actived');
+    } else {
+        randomQuestion();
+        enableOptions();
+    }
+
+};
+
+btnNext.addEventListener('click', validate);
+
+for(option of optionElements) {
+    option.addEventListener('click', e => checkAnswer(e));
+}
+
+const quizOver = () => {
+    document.querySelector('.quiz-over-modal').classList.add('active');
+    correctAnswer.innerHTML = score;
+    numberOfAllQuestion2.innerHTML = questions.length;
+    document.getElementById('btn-next').value= "ЗАВЕРШИТЬ";
+    coratten();
+};
+
+const tryAgain = () => {
+    window.location.reload();
+};
+
+btnTryAgain.addEventListener('click', tryAgain);
+
+window.addEventListener('load', () => {
+    randomQuestion();
+    answerTracker();
+});
