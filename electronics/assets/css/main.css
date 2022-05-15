@@ -6,7 +6,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(250, 144, 45);
+    background-color: rgb(77, 77, 77);
     color: rgb(255, 255, 255);
     
 }
@@ -109,7 +109,7 @@ footer .name-data {
 }
 
 .a {
-    color: rgb(3, 3, 3);
+    color: rgb(113, 64, 54);
     animation-delay: 0.50s;
     transition: all 1s;
 }
