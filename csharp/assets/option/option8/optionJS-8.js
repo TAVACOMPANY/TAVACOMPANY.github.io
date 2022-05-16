@@ -133,7 +133,7 @@ const questions = [
             '6',
             '3',
             '4',
-            '6',
+            '-6',
         ],
         rightAnswer: 1
     },
