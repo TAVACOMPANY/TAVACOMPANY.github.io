@@ -73,22 +73,22 @@ const questions = [
     {
         question: 'Какая из приведенных ниже конструкций будет верной, при нахождении суммы элементов массива а[5] ,расположенных до максимального элемента?',
         options: [
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max=a[0];' + br + ' for(i=0;i<5;i++)' + br + ' if (max>a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<=5-k;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' for(i=0;i<5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<k+1;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<k;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' max=a[0]; k=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<=k;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max=a[0]; k=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (max<a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0;i<k;i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max= a[0];' + br + ' for(i=0; i<5; i++)' + br + ' if (max > a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0; i<= 5-k; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' for(i=0; i<5; i++)' + br + ' if (max < a[i] ) {max= a[i]; k=i;}' + br + ' for(i=0; i<k+1; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' for(i=0; i<5; i++)' + br + ' if (max < a[i] ) {max= a[i]; k=i;}' + br + ' for(i=0; i<k; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s;' + br + ' max= a[0]; k=0;' + br + ' for(i=0; i<5; i++)' + br + ' if (max < a[i] ) {max=a[i]; k=i;}' + br + ' for(i=0; i<=k; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, max, s=0;' + br + ' max= a[0]; k=0;' + br + ' for(i=0; i<5; i++)' + br + ' if (max < a[i] ) {max= a[i]; k=i;}' + br + ' for(i=0; i < k; i++)' + br + ' s+=a[i];',
         ],
         rightAnswer: 4
     },
     {
         question: 'Какая из приведенных ниже конструкций будет верной, при нахождении суммы элементов массива а[5] ,расположенных после минимального элемента?',
         options: [
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s=0;' + br + ' min=a[0];' + br + ' for(i=0;i<5;i++)' + br + ' if (min>a[i] ) {min=a[i]; k=i;}' + br + ' for(i=k+1;i<=5;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s;' + br + ' for(i=0;i<5;i++)' + br + ' if (min<a[i] ) {min=a[i]; k=i;}' + br + ' for(i=0;i<k+1;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (min>a[i] ) {min=a[i]; k=i;}' + br + ' for(i=k;i<5;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s=0;' + br + ' min=a[0]; k=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (min>a[i] ) {min=a[i]; k=i;}' + br + ' for(i=k+1;i<5;i++)' + br + ' s+=a[i];',
-            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s;' + br + ' min=a[0]; k=0;' + br + ' for(i=0;i<5;i++)' + br + ' if (min<a[i] ) {min=a[i]; k=i;}' + br + '  for(i=0;i<=k;i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s=0;' + br + ' min= a[0];' + br + ' for(i=0; i<5; i++)' + br + ' if (min > a[i] ) {min= a[i]; k=i;}' + br + ' for(i=k+1; i<=5; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s;' + br + ' for(i=0; i<5; i++)' + br + ' if (min < a[i] ) {min= a[i]; k=i;}' + br + ' for(i=0; i<k+1; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s=0;' + br + ' for(i=0; i<5; i++)' + br + ' if (min > a[i] ) {min= a[i]; k=i;}' + br + ' for(i=k; i<5; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s=0;' + br + ' min= a[0]; k=0;' + br + ' for(i=0; i<5; i++)' + br + ' if (min > a[i] ) {min= a[i]; k=i;}' + br + ' for(i=k+1; i<5; i++)' + br + ' s+=a[i];',
+            'main()' + br + '{int a[5]={10,3,5,16,2,4}, i, k, min, s;' + br + ' min= a[0]; k=0;' + br + ' for(i=0; i<5; i++)' + br + ' if (min < a[i] ) {min= a[i]; k=i;}' + br + '  for(i=0; i<=k; i++)' + br + ' s+=a[i];',
         ],
         rightAnswer: 3
     },
