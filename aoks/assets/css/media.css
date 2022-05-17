@@ -1,0 +1,274 @@
+@media only screen and (max-width : 375px) {
+    .quiz-container {
+        max-width: 900px;
+        min-height: 45px !important;
+    }
+
+    .options div {
+        margin-bottom: 12px;
+        padding: 20px;
+    }
+
+    .content {
+        width: 99% !important;
+        margin: 60% auto !important;
+        padding: 0px !important;
+        height: 210px !important;
+    }
+
+    #btn-try-again {
+        font-size: 18px;
+        width: 130px;
+        height: 45px;
+    }
+
+    #btn-main-menu {
+        width: 160px;
+        height: 45px;
+        text-transform: uppercase;
+        font-size: 16.5px;
+    }
+
+    .button #btn-next {
+        padding: 10px 45px;
+        margin-top: 20px;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .attention-over-modal .content h1 {
+        font-size: 40px;
+    }
+
+    .content #btn-close {
+        font-size: 18px;
+        width: 90px;
+        height: 32px;
+        margin-left: 20%;
+    }
+
+    #question {
+        font-size: 20px;
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    .btn-test {
+        width: 125px !important;
+        height: 50px !important;
+    }
+    
+    * {
+        box-sizing: initial;
+    }
+
+    .last {
+        margin-left: 9% !important;
+    }
+}
+
+
+@media only screen and (max-width : 414px) {
+    .quiz-container {
+        max-width: 800px;
+        min-height: 675px;
+    }
+
+    .options div {
+        margin-bottom: 12px;
+        padding: 20px;
+    }
+
+    .content {
+        width: 97%;
+        margin: 60% auto;
+        padding: 20px;
+        height: 240px;
+    }
+
+    #btn-try-again {
+        font-size: 18px;
+        width: 130px;
+        height: 45px;
+    }
+
+    #btn-main-menu {
+        width: 160px;
+        height: 45px;
+        text-transform: uppercase;
+        font-size: 16.5px;
+    }
+
+    .button #btn-next {
+        padding: 10px 45px;
+        margin-top: 20px;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .attention-over-modal .content h1 {
+        font-size: 40px;
+    }
+
+    .content #btn-close {
+        font-size: 18px;
+        width: 90px;
+        height: 32px;
+        margin-left: 37%;
+    }
+
+    #question {
+        font-size: 20px;
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    .btn-test {
+        width: 155px;
+        height: 55px;
+    }
+
+    .last {
+        margin-left: 8% !important;
+    }
+}
+
+
+
+@media only screen and (max-width : 360px) {
+    .quiz-container {
+        max-width: 400px;
+        min-height: 640px;
+    }
+
+    .options div {
+        margin-bottom: 12px;
+        padding: 20px;
+    }
+
+    .content {
+        width: 97%;
+        margin: 50% auto;
+        padding: 0px;
+        height: 180px;
+    }
+
+    #btn-try-again {
+        font-size: 17px;
+        width: 100px;
+        height: 35px;
+    }
+
+    #btn-main-menu {
+        width: 120px;
+        height: 35px;
+        text-transform: uppercase;
+        font-size: 15.5px;
+    }
+
+    .button #btn-next {
+        padding: 10px 45px;
+        margin-top: 20px;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .attention-over-modal .content h1 {
+        font-size: 35px;
+    }
+
+    .content #btn-close {
+        font-size: 17px;
+        width: 90px;
+        height: 32px;
+        margin-left: 35%;
+    }
+
+    #question {
+        font-size: 20px;
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    .btn-test {
+        width: 100px;
+        height: 50px;
+        margin-left: 24px;
+    }
+}
+
+
+@media only screen and (max-width : 320px) {
+    .quiz-container {
+        max-width: 568px;
+        min-height: 568px;
+    }
+
+    .options div {
+        margin-bottom: 12px;
+        padding: 20px;
+    }
+
+    .content {
+        width: 90%;
+        margin: 90% auto;
+        padding: 0px;
+        height: 180px;
+    }
+
+    #btn-try-again {
+        font-size: 16px;
+        width: 100px;
+        height: 40px;
+        margin-left: 0px;
+        margin-bottom: 10%;
+    }
+
+    #btn-main-menu {
+        width: 100px;
+        height: 40px;
+        text-transform: uppercase;
+        font-size: 16.5px;
+        margin-right: 5%;
+    }
+
+    .button #btn-next {
+        padding: 10px 45px;
+        margin-top: 20px;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .attention-over-modal .content h1 {
+        font-size: 40px;
+    }
+
+    .content #btn-close {
+        font-size: 16px;
+        width: 90px;
+        height: 30px;
+        margin-left: 32%;
+        margin-top: 1px;
+    }
+
+    #question {
+        font-size: 20px;
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    .btn-test {
+        width: 95px !important;
+        height: 50px !important;
+    }
+}
+
+@media only screen and (min-width : 1600px) {
+    .wrapp {
+    margin-left: 26%;
+    }
+    
+    footer {
+    margin-top: 420px;
+    }
+}
